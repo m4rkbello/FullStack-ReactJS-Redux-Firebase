@@ -1,15 +1,17 @@
-import React, {Component} from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
-import SignInLinks from "./components/layout/SignInLink";
+import Dashboard from './components/dashboard';
 
-
-function App () {
+function App() {
   return (
     <Router>
-    <div>
-      <Navbar />
-    </div>
+      <div>
+        <Navbar />
+        <Switch>
+          <Route path='/' component={Dashboard} />
+        </Switch>
+      </div>
     </Router>
   );
 }
