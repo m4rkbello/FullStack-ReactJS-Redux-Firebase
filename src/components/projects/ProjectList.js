@@ -5,11 +5,11 @@ import ProjectSummary from "./ProjectSummary";
 
 const ProjectList = () => {
     return (
-        <diiv classname="project-list section">
+        <div className="project-list section">
         <ProjectSummary />
             
 
-        </diiv>
+        </div>
 
 
         
