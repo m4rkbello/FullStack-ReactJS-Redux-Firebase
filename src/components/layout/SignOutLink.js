@@ -5,8 +5,8 @@ import SignInLinks from "./SignInLink";
 const SignOutLinks = () => {
     return (
         <ul className="right">
-        <li><NavLink to='/'>Signup</NavLink></li>
-        <li><NavLink to='/'>Login</NavLink></li>
+        <li><NavLink exact={true} to='/signup'>Signup</NavLink></li>
+        <li><NavLink exact={true} to='/signin'>Login</NavLink></li>
       </ul>
      );
 }

@@ -1,3 +1,40 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
+html {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(/public/img/marko.jpg) no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    background-color: #95e8f3;
+    min-height: 100%;
+}
+
+form {
+    padding: 20px;
+    margin-top: 60px;
+}
+
+form button,
+form h5 {
+    margin: 20px 0px;
+}
+
+/* Simplified selector for focused input elements */
+input:focus,
+textarea:focus {
+    border-color: #ec407a;
+    box-shadow: none;
+}
+
+/* You can add more specific styles for different input types if needed */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea.materialize-textarea:focus {
+    /* Additional styles for specific input types */
+}
+
